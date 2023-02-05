@@ -1,15 +1,25 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Job Search</title>
 </head>
+
 <body>
-    <input type="text" name="jobCategory" id="inpCategory" />
+    <input type="text" name="jobCategory" id="inpCategory" required="required" />
     <button id="btnSubmit">Submit</button>
-    
-    
+    <div id="divResult">
+        <div id="divMessage" class="message"></div>
+        <ul id="ulResults">
+
+        </ul>
+    </div>
+
+
     <script src="script.js"></script>
 </body>
+
 </html>
