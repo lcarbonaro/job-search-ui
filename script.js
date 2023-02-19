@@ -31,9 +31,21 @@ btn.addEventListener('click', async () => {
 
         if (jobRecords.length > 0) {
             jobRecords.forEach((jobRecord) => {
-                let { jobTitle, company } = jobRecord;
+                let { jobTitle, company, region } = jobRecord;
                 let listItem = document.createElement('li');
-                listItem.textContent = `${jobTitle} (${company})`;   // Finance Clerk (XYX Inc)
+                listItem.classList = 'jobitem';
+
+                let p = document.createElement('p');
+                p.classList = 'region'
+                //p.style = 'font-weight:bold;'
+                p.textContent = `${region}`;
+                listItem.appendChild(p);
+
+                p = document.createElement('p');
+                p.classList = 'title'
+                p.textContent = `${jobTitle} (${company})`;
+                listItem.appendChild(p);
+
                 ul.appendChild(listItem);
             });
         } else {

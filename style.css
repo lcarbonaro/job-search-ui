@@ -2,3 +2,24 @@
     color:red;
     padding: 10px;
 }
+
+ul {
+    list-style: none;
+}
+
+li.jobitem {
+    border: 2px solid blue;
+    padding: 5px;
+    margin: 10px;
+    width:50%;
+}
+
+p.region {
+	font-weight:bold;
+}
+
+p.title {
+    text-decoration: underline;
+}
+
+
